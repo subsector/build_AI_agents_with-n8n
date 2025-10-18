@@ -9,10 +9,10 @@
       "type": "n8n-nodes-base.executeWorkflowTrigger",
       "typeVersion": 1.1,
       "position": [
-        0,
-        96
+        -1104,
+        16
       ],
-      "id": "7b965773-f437-48f5-b560-4e53a73ee2b2",
+      "id": "e43b4d7c-a633-4395-85fe-d5ece987756b",
       "name": "When Executed by Another Workflow"
     },
     {
@@ -29,20 +29,20 @@
         },
         "repository": {
           "__rl": true,
-          "value": "n8n-agent-lil",
+          "value": "build_AI_agents_with-n8n-4103420-main",
           "mode": "list",
-          "cachedResultName": "n8n-agent-lil",
-          "cachedResultUrl": "https://github.com/tobiaszwingmann/n8n-agent-lil"
+          "cachedResultName": "build_AI_agents_with-n8n-4103420-main",
+          "cachedResultUrl": "https://github.com/tobiaszwingmann/build_AI_agents_with-n8n-4103420-main"
         },
         "filePath": "tools/quotes/template"
       },
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        224,
-        0
+        -880,
+        -96
       ],
-      "id": "c4097213-0d26-41c8-ad72-4aee3255c3eb",
+      "id": "d8534cb0-d727-467a-b896-d26f5c615f9b",
       "name": "List files",
       "webhookId": "ee869df5-4ad0-43ef-8282-c93f4978647c",
       "credentials": {
@@ -66,10 +66,10 @@
         },
         "repository": {
           "__rl": true,
-          "value": "n8n-agent-lil",
+          "value": "build_AI_agents_with-n8n-4103420-main",
           "mode": "list",
-          "cachedResultName": "n8n-agent-lil",
-          "cachedResultUrl": "https://github.com/tobiaszwingmann/n8n-agent-lil"
+          "cachedResultName": "build_AI_agents_with-n8n-4103420-main",
+          "cachedResultUrl": "https://github.com/tobiaszwingmann/build_AI_agents_with-n8n-4103420-main"
         },
         "filePath": "={{ $json.path }}",
         "asBinaryProperty": false,
@@ -78,10 +78,10 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        448,
-        0
+        -656,
+        -96
       ],
-      "id": "67c6b8db-3d95-4912-af03-0c0d38569431",
+      "id": "f8fd19ea-b130-45ff-80fb-12129f84bcb1",
       "name": "Get a file",
       "webhookId": "d27df519-362c-47f6-9b1c-b633d15bb7ef",
       "credentials": {
@@ -101,10 +101,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        672,
-        0
+        -432,
+        -96
       ],
-      "id": "4845069a-9153-4b64-9623-9eda6a451732",
+      "id": "d26f0db4-363e-4048-b66e-6c8b45e119b4",
       "name": "HTTP Request",
       "credentials": {
         "githubOAuth2Api": {
@@ -118,10 +118,10 @@
       "type": "n8n-nodes-base.merge",
       "typeVersion": 3.2,
       "position": [
-        896,
-        96
+        -208,
+        16
       ],
-      "id": "1d886f8e-f811-4094-a243-b8a5ffb31ed8",
+      "id": "6273c0ea-defe-4707-af49-c2695f2dc684",
       "name": "Merge"
     },
     {
@@ -131,10 +131,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        672,
-        192
+        -432,
+        112
       ],
-      "id": "9ec8ab81-35b3-4fb0-b9ac-7f8abb21751c",
+      "id": "14682140-980b-423f-96d9-27cbfeb2b814",
       "name": "Define variables"
     },
     {
@@ -144,10 +144,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1120,
-        96
+        16,
+        16
       ],
-      "id": "be2ecf56-402f-4b21-9623-bdea600cdd39",
+      "id": "5c40b392-9880-4049-b34a-12f97ca186a2",
       "name": "Update Quote"
     },
     {
@@ -163,10 +163,10 @@
         },
         "repository": {
           "__rl": true,
-          "value": "n8n-agent-lil",
+          "value": "build_AI_agents_with-n8n-4103420-main",
           "mode": "list",
-          "cachedResultName": "n8n-agent-lil",
-          "cachedResultUrl": "https://github.com/tobiaszwingmann/n8n-agent-lil"
+          "cachedResultName": "build_AI_agents_with-n8n-4103420-main",
+          "cachedResultUrl": "https://github.com/tobiaszwingmann/build_AI_agents_with-n8n-4103420-main"
         },
         "filePath": "=tools/quotes/new/{{ $('Define variables').first().json.quote_id}}.html",
         "fileContent": "={{ $json.html }}",
@@ -175,10 +175,10 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        1344,
-        96
+        240,
+        16
       ],
-      "id": "43747807-1681-4093-bdfb-8da020f6fefd",
+      "id": "1e143a70-3320-427d-ac8d-495abb99b54a",
       "name": "Create a file",
       "webhookId": "d27df519-362c-47f6-9b1c-b633d15bb7ef",
       "credentials": {
@@ -205,10 +205,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1568,
-        96
+        464,
+        16
       ],
-      "id": "2714601d-b4e6-4b5b-a2a2-a57a88c54cfc",
+      "id": "0ea23f94-02cd-4098-80a1-c6b4fe4b5b5d",
       "name": "Edit Fields"
     }
   ],
@@ -329,11 +329,10 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "10f90a95-9406-45ac-a46e-023deabe2086",
+  "versionId": "66ba6d41-fdb3-4c13-9b94-e17ce8102521",
   "meta": {
-    "templateCredsSetupCompleted": true,
     "instanceId": "94e1edcc34a91a151fc2ec1b99597068a304e37fdb946fc806f00f97776fce3a"
   },
-  "id": "pWXusXvMjVJStwWE",
+  "id": "xv2TJBGsA6t0gsds",
   "tags": []
 }
